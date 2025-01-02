@@ -14,7 +14,13 @@
 
         header {
             display: flex; justify-content: space-between;  
-            align-items: center; width: 100%; padding: 16px;  
+            align-items: center; width: 100%; 
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            height: 20px;
         }
 
         main {
@@ -87,13 +93,24 @@
            background-color:#0056b3 ;  
            color:white ; border:none ;  
        }
+
+        @media (max-width: 767px) {
+            header {
+                padding: 16px 0;
+            }
+            .logo {
+                margin-left: 16px;
+            }
+            .login-button {
+                margin-right: 16px;
+            }
+        }
     </style>
 </head>
 
-
 <body>
     <header>
-        <img src="logo.svg" alt="logo" class="logo">
+        <img src="logo.svg" alt="판다마켓" class="logo">
         <a href="login.html" class="login-button" status="active" type="outlined">  
           로그인 
         </a>
@@ -103,7 +120,6 @@
         <img src="Frame 2609420.png" alt="인기 상품을 확인해 보세요">
         <img src="desktop_05.png" alt="믿을 수 있는 판다마켓 중고 거래">
     </main>
-
 
     <footer>
         <div class="footer-text">© codeit - 2024</div> 
