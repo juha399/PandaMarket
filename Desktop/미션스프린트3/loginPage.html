@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 판다마켓</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            border-color: #3692FF;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3692FF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .signup-link {
+            display: block;
+            margin-top: 20px;
+            color: #3692FF;
+            text-decoration: none;
+        }
+        .sns-login {
+            margin-top: 20px;
+        }
+        .sns-login a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a href="/" class="logo">판다마켓</a>
+        <form action="/login" method="POST">
+            <input type="email" placeholder="이메일" required>
+            <input type="password" placeholder="비밀번호" required>
+            <button type="submit">로그인</button>
+        </form>
+        <a href="/signup.html" class="signup-link">회원 가입</a>
+        <div class="sns-login">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="google-icon.png" alt="Google 로그인">
+            </a>
+            <a href="https://www.kakaocorp.com/page/" target="_blank">
+                <img src="kakao-icon.png" alt="Kakao 로그인">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
